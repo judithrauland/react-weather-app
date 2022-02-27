@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import Weather from "./Weather";
 import "./App.css";
 
@@ -11,6 +10,7 @@ function App() {
           <a
             href="https://github.com/judithrauland/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>
