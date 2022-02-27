@@ -74,6 +74,49 @@ export default function Weather() {
       </div>
     );
   } else {
-    return setCity("Cologne");
+    return (
+      <div className="container">
+        <form className="mb-3" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                autocomplete="off"
+                onChange={updateCity}
+              />
+            </div>
+            <div className="col-1">
+              <button type="submit" className="btn btn-light">
+                <i className="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div className="overview">
+          <h1>{city}</h1>
+          <ul>
+            <li>Last updated:</li>
+            <li>{weather.description}</li>
+          </ul>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <div className="clearfix weather-temperature">
+              <img src={weather.icon} alt={weather.description} />
+            </div>
+            <div className="float-left">
+              {Math.round(weather.temperature)} °C
+            </div>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Humidity: {weather.humidity} %</li>
+              <li>Wind: {Math.round(weather.wind)} m/s</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
