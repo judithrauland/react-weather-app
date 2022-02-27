@@ -37,7 +37,7 @@ export default function Weather() {
               <input
                 type="search"
                 placeholder="Enter a city..."
-                autocomplete="off"
+                autoComplete="off"
                 onChange={updateCity}
               />
             </div>
@@ -82,7 +82,7 @@ export default function Weather() {
               <input
                 type="search"
                 placeholder="Enter a city..."
-                autocomplete="off"
+                autoComplete="off"
                 onChange={updateCity}
               />
             </div>
