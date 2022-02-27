@@ -10,18 +10,13 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city..."
               className="form-control"
-              id="city-input"
               autocomplete="off"
             />
-            <div className="col-1">
-              <button
-                type="submit"
-                className="btn btn-light"
-                id="search-button"
-              >
-                <i className="fas fa-search"></i>
-              </button>
-            </div>
+          </div>
+          <div className="col-1">
+            <button type="submit" className="btn btn-light">
+              <i className="fas fa-search"></i>
+            </button>
           </div>
         </div>
       </form>
